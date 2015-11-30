@@ -1,20 +1,18 @@
 BusinessCard
-	Tab
-		About
-			Teo
-			Mahasiswa
-			InfoPerusahaan
-				Institut Teknologi Bandung
-				itb.ac.id
-			Bonbon
+	Owner Andrey Simaputera
+	CompanyInformation
+		CompanyName Institut Teknologi Bandung
+		Position Mahasiswa
+		CompanyWebsite itb.ac.id
 	end
-	Tab
-		Contact
-			andrey@pika.pika
-			08123
-			SocialLink
-				andreysimafb
-				andreysimatw
-				andreysimain
+	ContactInformation	
+		Email andrey@pika.pika
+		PhoneNumber 08123
 	end
+	SocialMedia
+		FacebookUsername andreysimafb
+		TwitterUsername andreysimatw
+		LinkedinUsername andreysimain
+	end
+	About Nananana Batman
 end
