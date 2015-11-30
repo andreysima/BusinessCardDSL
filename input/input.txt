@@ -1,0 +1,20 @@
+BusinessCard
+	Tab
+		About
+			Teo
+			Mahasiswa
+			InfoPerusahaan
+				Institut Teknologi Bandung
+				itb.ac.id
+			Bonbon
+	end
+	Tab
+		Contact
+			andrey@pika.pika
+			08123
+			SocialLink
+				andreysimafb
+				andreysimatw
+				andreysimain
+	end
+end
