@@ -5,56 +5,54 @@
 import BusinessCard
 temp = new BusinessCard()
 
-File fin = new File("../input/input.txt")
-BufferedReader br = new BufferedReader(new FileReader(fin));
+File input = new File("../input/input.txt");
+BufferedReader br = new BufferedReader(new FileReader(input));
 
-String line = null;
-i = 0
+String namaPemilik = "";
+String jabatan = "";
+String email = "";
+String noHandphone = "";
+String namaPerusahaan = "";
+String webPerusahaan = "";
+String facebookUsername = "";
+String twitterUsername = "";
+String linkedIn = "";
+String quote = "";
 
-String namaPemilik
-String jabatan
-String email
-String noHandphone
-String namaPerusahaan
-String webPerusahaan
-String facebookUsername
-String twitterUsername
-String linkedIn
-String result
-String quote
-
+String line;
 while ((line = br.readLine()) != null) {
-    i++
-    line = line.replaceAll('\\t+', '');
-    if(i == 4){
-        namaPemilik = line
+    line = line.replaceAll("\\t+","");
+    def word = line.split(" ", 2);
+    
+    if(word[0].equals("Owner")){
+        namaPemilik = word[1];
     }
-    if(i == 5){
-        jabatan = line
+    if(word[0].equals("CompanyName")){
+        namaPerusahaan = word[1];
     }
-    if(i == 7){
-        namaPerusahaan = line
+    if(word[0].equals("Position")){
+        jabatan = word[1];
     }
-    if(i == 8){
-        webPerusahaan = line
+    if(word[0].equals("CompanyWebsite")){
+        webPerusahaan = word[1];
     }
-    if(i == 9){
-        quote = line
+    if(word[0].equals("Email")){
+        email = word[1];
     }
-    if(i == 13){
-        email = line
+    if(word[0].equals("PhoneNumber")){
+        noHandphone = word[1];
     }
-    if(i == 14){
-        noHandphone = line
+    if(word[0].equals("FacebookUsername")){
+        facebookUsername = word[1];
     }
-    if(i == 16){
-        facebookUsername = line
+    if(word[0].equals("TwitterUsername")){
+        twitterUsername = word[1];
     }
-    if(i == 17){
-        twitterUsername = line
+    if(word[0].equals("LinkedinUsername")){
+        linkedIn = word[1];
     }
-    if(i == 18){
-        linkedIn = line
+    if(word[0].equals("About")){
+        quote = word[1];
     }
 }
 

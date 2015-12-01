@@ -6,13 +6,13 @@ BusinessCard
 		CompanyWebsite itb.ac.id
 	end
 	ContactInformation	
-		Email andrey@pika.pika
-		PhoneNumber 08123
+		Email andrey@sima.com
+		PhoneNumber 082234566543
 	end
 	SocialMedia
-		FacebookUsername andreysimafb
-		TwitterUsername andreysimatw
-		LinkedinUsername andreysimain
+		FacebookUsername andreysima
+		TwitterUsername andreysima
+		LinkedinUsername andreysima
 	end
-	About Nananana Batman
+	About Simplicity at it's finest
 end
